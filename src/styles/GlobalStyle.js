@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   html {
     body {
       margin: 0;
       padding: 0;
       position: relative;
       font-size: 14px;
+      font-family: Prompt;
       color: #333333;
       background: #FFFFFF;
     }
@@ -16,9 +17,16 @@ export const GlobalStyles = createGlobalStyle`
     svg {
       display: block;
     }
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+    }
     button {
-      border: none; 
+      border: none;
+      background: inherit;
       font-family: inherit;
+      cursor: pointer; 
       &:focus {
         outline: none;
       }
@@ -29,6 +37,7 @@ export const GlobalStyles = createGlobalStyle`
       }
     }
     textarea {
+      font-family: inherit;
       &:focus {
         outline: none;
       }
